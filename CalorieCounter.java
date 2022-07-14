@@ -1,33 +1,5 @@
 import java.util.Scanner;
 
-// Create the CalorieCounter class
-// The CalorieCounter class will not have fields, but will contain the main method (entry point in the application)
-// In the main a menu of options for the user will be displayed which will be displayed again after each choice
-// performed until the user chooses the option to exit the application (EXIT)
-// Another method will be created to display the menu: printMenu (which will be called in main)
-// It will display the user menu in the console
-// MENU:
-// "1. Add product to computer and calculate its calories"
-// "2. Calculate the calories for a product without being added to the catalog"
-// "3. Displays all products in the catalog and the calories for each"
-// "4. Delete a product from the catalog"
-// "5. Find product by name"
-// "6. Exit the application"
-// "----------------------------------------------- ----------------- ”
-// "Choose the action with the number:";
-// After displaying the menu, read the number corresponding to the option, entered by the user in the console
-// and the operation specific to the chosen option will be performed
-// Based on the input (the number read from the console) it will be decided which operation should be performed using
-// switch instruction. This block of code will fit into a performSelectedAction method
-// (which will be called in main after reading the input) (receives as parameter the number read from the colossus,
-// specific to the option chosen by the user and does not return anything, only performs the operation specific
-// to the number introduced). On each branch of the case from the switch instruction, the ProductCatalog object
-// will be called, the method corresponding to the chosen option.
-// To perform operations 1,3,4,5 you need an instance of the ProductCatalog class.
-// This instance (object) is created in the main method before any line of code and is passed
-// as a parameter of the performSelectedAction method (along with the input from the console) in order to be
-// used to perform the necessary operations
-
 public class CalorieCounter {
     public static void main(String[] args) {
         ProductCatalog myCatalog = new ProductCatalog();
