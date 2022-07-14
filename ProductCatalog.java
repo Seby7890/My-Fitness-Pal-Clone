@@ -1,8 +1,8 @@
 import java.lang.reflect.Array;
 
 public class ProductCatalog {
-    Product[] products = new Product[4];
-    public static final int maxProducts = 4;
+    Product[] products = new Product[30];
+    public static final int maxProducts = 30;
     int addedProducts = 0;
 
     public void printProducts() {
